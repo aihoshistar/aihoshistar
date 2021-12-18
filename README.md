@@ -1,6 +1,6 @@
 ### Hi there, I'm JiSu👋
 ![Jisu's GitHub stats](https://github-readme-stats.vercel.app/api?username=YeoJiSu&show_icons=true&theme=radical)
-![Jisu's GitHub stats](https://github-readme-stats.vercel.app/api?username=YeoJiSu&hide=contribs,prs)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YeoJiSu&layout=compact)](https://github.com/YeoJiSu/github-readme-stats)
 
 
 <!--
