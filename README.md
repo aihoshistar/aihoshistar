@@ -1,16 +1,19 @@
 ![header](https://capsule-render.vercel.app/api?text=Kyungseo-Park&animation=twinkling&fontColor=fff&type=waving&height=160&fontAlignY=30&fontSize=55)
 
-<p align="center">
+<div align="center">
   <img src="./images/kyungseo.park.jpg" width="180" style="border-radius: 50%">
 
+ 
 [![Facebook Kyungseo-Park](https://img.shields.io/badge/-Facebook-1877F2?style=flat-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100006579702913)
 [![Instagram Kyungseo-Park](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/kkyungvelyy)](https://www.instagram.com/kkyungvelyy)
 [![Linkedin: Kyungseo-Park](https://img.shields.io/badge/-KyungseoPark-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)](https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)
 [![GitHub Kyungseo-Park](https://img.shields.io/github/followers/Kyungseo-Park?label=follow&style=social)](https://github.com/Kyungseo-Park)
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kyungseo-Park.Kyungseo-Park)
 
+ 
 📫 contact us: troublesome.dev@gmail.com
+</div>
 
-</p>
 
 ### 2019 Use Languages
 
@@ -53,4 +56,14 @@
 ![Stats Overview](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/overview.svg)
 ![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/languages.svg)
 
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kyungseo-Park.Kyungseo-Park)
+
+
+
+### 👣 Traces of my life
+
+[![TechBlog Kyungseo-Park](https://img.shields.io/badge/Tech%20Blog-11B48A?style=flat-square&logo=Vimeo&logoColor=white)](https://blog.kspark.link)
+[![Profile Kyungseo-Park](https://img.shields.io/badge/Web%20portfolio-FF6900?style=flat-square&logo=The%20Conversation&logoColor=white)](https://profile.kspark.link/)
+[![경서와아이들 Kyungseo-Park](https://img.shields.io/badge/%EA%B2%BD%EC%84%9C%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4-dc143c?style=flat-square&logo=discord&logoColor=white)](https://kspark.link/)
+
+
+![footer](https://capsule-render.vercel.app/api?section=footer&height=160&&type=waving) 
