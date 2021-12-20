@@ -19,8 +19,8 @@ Here are some ideas to get you started:
 Bye!
 
 - 📫 How to reach me: troublesome.dev@gmail.com
-
-**Languages:**
+  ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kyungseo-Park.Kyungseo-Park)
+  **Languages:**
 
 2019
 ![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
@@ -55,17 +55,10 @@ Bye!
 ### 📊 Github Stats
 
 <a href='https://github.com/Kyungseo-Park/github-stats-transparent'>
-  
+
 ![Stats Overview](https://raw.githubusercontent.com/Kyungseo-Park/github-stats-transparent/output/generated/overview.svg)
 ![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/github-stats-transparent/output/generated/languages.svg)
-
 </a>
-
-<br>
-
-![Kyungseo-Park's Github Stats](https://github-readme-stats.vercel.app/api?username=Kyungseo-Park&count_private=true&show_icons=true&include_all_commits=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kyungseo-Park&hide=TeX&layout=compact)
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kyungseo-Park.Kyungseo-Park)
 
 <!--
   https://github.com/rahul-jha98/rahul-jha98
