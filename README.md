@@ -19,7 +19,6 @@ Here are some ideas to get you started:
 Bye!
 
 - 📫 How to reach me: troublesome.dev@gmail.com
-  ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kyungseo-Park.Kyungseo-Park)
   **Languages:**
 
 2019
