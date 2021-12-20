@@ -52,9 +52,4 @@
 
 ![Stats Overview](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/overview.svg)
 ![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/languages.svg)
-
-<!--
-  https://github.com/rahul-jha98/rahul-jha98
-https://github.com/MacroPower/MacroPower
-https://github.com/abhisheknaiidu/awesome-github-profile-readme#dynamic-realtime-
--->
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kyungseo-Park.Kyungseo-Park)
