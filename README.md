@@ -53,11 +53,8 @@ Bye!
 
 ### 📊 Github Stats
 
-<a href='https://github.com/Kyungseo-Park/github-stats-transparent'>
-
-![Stats Overview](https://raw.githubusercontent.com/Kyungseo-Park/github-stats-transparent/output/generated/overview.svg)
-![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/github-stats-transparent/output/generated/languages.svg)
-</a>
+![Stats Overview](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/overview.svg)
+![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/languages.svg)
 
 <!--
   https://github.com/rahul-jha98/rahul-jha98
