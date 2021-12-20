@@ -2,13 +2,13 @@
 
 <p align="center">
   <img src="./images/kyungseo.park.jpg" width="180" style="border-radius: 50%">
-</p>
 
 [![Facebook Kyungseo-Park](https://img.shields.io/badge/-Facebook-1877F2?style=flat-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100006579702913)
 [![Instagram Kyungseo-Park](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/kkyungvelyy)](https://www.instagram.com/kkyungvelyy)
 [![Linkedin: Kyungseo-Park](https://img.shields.io/badge/-KyungseoPark-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)](https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)
 [![GitHub Kyungseo-Park](https://img.shields.io/github/followers/Kyungseo-Park?label=follow&style=social)](https://github.com/Kyungseo-Park)
 
+</p>
 Bye!
 
 - 📫 How to reach me: troublesome.dev@gmail.com
