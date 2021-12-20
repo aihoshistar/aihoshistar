@@ -8,13 +8,12 @@
 [![Linkedin: Kyungseo-Park](https://img.shields.io/badge/-KyungseoPark-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)](https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)
 [![GitHub Kyungseo-Park](https://img.shields.io/github/followers/Kyungseo-Park?label=follow&style=social)](https://github.com/Kyungseo-Park)
 
+📫 contact us: troublesome.dev@gmail.com
+
 </p>
-Bye!
 
-- 📫 How to reach me: troublesome.dev@gmail.com
-  **Languages:**
+### 2019 Use Languages
 
-2019
 ![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/-Python-black?logo=Python&style=social)&nbsp;&nbsp;
 ![jQuery](https://img.shields.io/badge/-jQuery-black?logo=jquery&style=social)&nbsp;&nbsp;
@@ -22,8 +21,10 @@ Bye!
 ![Flutter](https://img.shields.io/badge/-Flutter-black?logo=Flutter&style=social)&nbsp;&nbsp;
 ![Laravel](https://img.shields.io/badge/-Laravel-black?logo=Laravel&style=social)&nbsp;&nbsp;
 ![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
+![Docker](https://img.shields.io/badge/-Docker-black?logo=Docker&style=social)&nbsp;&nbsp;
 
-2020
+### 2020 Use Languages
+
 ![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)&nbsp;&nbsp;
 ![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)&nbsp;&nbsp;
 ![Flutter](https://img.shields.io/badge/-Flutter-black?logo=Flutter&style=social)&nbsp;&nbsp;
@@ -32,8 +33,10 @@ Bye!
 ![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
 ![Oracle](https://img.shields.io/badge/-Oracle-black?logo=Oracle&style=social)&nbsp;&nbsp;
 ![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
+![Docker](https://img.shields.io/badge/-Docker-black?logo=Docker&style=social)&nbsp;&nbsp;
 
-2021
+### 2021 Use Languages
+
 ![Javascript](https://img.shields.io/badge/-Javascript-black?logo=Javascript&style=social)&nbsp;&nbsp;
 ![React](https://img.shields.io/badge/-React-black?logo=React&style=social)&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/-Python-black?logo=Python&style=social)&nbsp;&nbsp;
@@ -43,6 +46,7 @@ Bye!
 ![Go](https://img.shields.io/badge/-Go-black?logo=Go&style=social)&nbsp;&nbsp;
 ![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
 ![Postgresql](https://img.shields.io/badge/-Postgresql-black?logo=Postgresql&style=social)&nbsp;&nbsp;
+![Docker](https://img.shields.io/badge/-Docker-black?logo=Docker&style=social)&nbsp;&nbsp;
 
 ### 📊 Github Stats
 
