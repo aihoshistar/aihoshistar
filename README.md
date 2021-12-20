@@ -20,26 +20,51 @@ Bye!
 
 - 📫 How to reach me: troublesome.dev@gmail.com
 
-**Languages and Tools:**
+**Languages:**
 
-![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)&nbsp;&nbsp;
-![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)&nbsp;&nbsp;
-![JavaScript](https://img.shields.io/badge/-JavaScript-black?logo=javascript&style=social)&nbsp;&nbsp;
+2019
+![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/-Python-black?logo=Python&style=social)&nbsp;&nbsp;
-![C](https://img.shields.io/badge/-C-black?logo=c&style=social)&nbsp;&nbsp;
-![HTML5](https://img.shields.io/badge/-HTML5-black?logo=html5&style=social)&nbsp;&nbsp;
-![CSS3](https://img.shields.io/badge/-CSS3-black?logo=css3&style=social)&nbsp;&nbsp;
 ![jQuery](https://img.shields.io/badge/-jQuery-black?logo=jquery&style=social)&nbsp;&nbsp;
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-black?logo=bootstrap&style=social)&nbsp;&nbsp;
-![MySQL](https://img.shields.io/badge/-MySQL-black?logo=mysql&style=social)&nbsp;&nbsp;
-![Git](https://img.shields.io/badge/-Git-black?logo=git&style=social)&nbsp;&nbsp;
-![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&style=social)&nbsp;&nbsp;
 ![Flutter](https://img.shields.io/badge/-Flutter-black?logo=Flutter&style=social)&nbsp;&nbsp;
+![Laravel](https://img.shields.io/badge/-Laravel-black?logo=Laravel&style=social)&nbsp;&nbsp;
+![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
+
+2020
+![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)&nbsp;&nbsp;
+![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)&nbsp;&nbsp;
+![Flutter](https://img.shields.io/badge/-Flutter-black?logo=Flutter&style=social)&nbsp;&nbsp;
+![Go](https://img.shields.io/badge/-Go-black?logo=Go&style=social)&nbsp;&nbsp;
+![Laravel](https://img.shields.io/badge/-Laravel-black?logo=Laravel&style=social)&nbsp;&nbsp;
+![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
+![Oracle](https://img.shields.io/badge/-Oracle-black?logo=Oracle&style=social)&nbsp;&nbsp;
+![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
+
+2021
+![Javascript](https://img.shields.io/badge/-Javascript-black?logo=Javascript&style=social)&nbsp;&nbsp;
 ![React](https://img.shields.io/badge/-React-black?logo=React&style=social)&nbsp;&nbsp;
+![Python](https://img.shields.io/badge/-Python-black?logo=Python&style=social)&nbsp;&nbsp;
+![NestJS](https://img.shields.io/badge/-NestJS-black?logo=NestJS&style=social)&nbsp;&nbsp;
+![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
+![Laravel](https://img.shields.io/badge/-Laravel-black?logo=Laravel&style=social)&nbsp;&nbsp;
+![Go](https://img.shields.io/badge/-Go-black?logo=Go&style=social)&nbsp;&nbsp;
+![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
+![Postgresql](https://img.shields.io/badge/-Postgresql-black?logo=Postgresql&style=social)&nbsp;&nbsp;
+
+### 📊 Github Stats
+
+<a href='https://github.com/Kyungseo-Park/github-stats-transparent'>
+  
+![Stats Overview](https://raw.githubusercontent.com/Kyungseo-Park/github-stats-transparent/output/generated/overview.svg)
+![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/github-stats-transparent/output/generated/languages.svg)
+
+</a>
+
+<br>
 
 ![Kyungseo-Park's Github Stats](https://github-readme-stats.vercel.app/api?username=Kyungseo-Park&count_private=true&show_icons=true&include_all_commits=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kyungseo-Park&hide=TeX&layout=compact)
-
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kyungseo-Park.Kyungseo-Park)
 
 <!--
