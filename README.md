@@ -57,8 +57,8 @@
 
 ### 👣 Traces of my life
 
-[![TechBlog Kyungseo-Park](https://img.shields.io/badge/Tech%20Blog-000000?style=flat-square&logo=Medium&logoColor=#000000)](https://blog.kspark.link)
-[![Profile Kyungseo-Park](https://img.shields.io/badge/Portfolio-999999?style=flat-square&logo=The%20Irish%20Times&logoColor=white)](https://profile.kspark.link/)
-[![경서와아이들 Kyungseo-Park](https://img.shields.io/badge/%EA%B2%BD%EC%84%9C%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4-EB2E2C?style=flat-square&logo=Ferrari%20N.V.&logoColor=white)](https://team.kspark.link/)
+[![TechBlog Kyungseo-Park](https://img.shields.io/badge/Tech%20Blog-000000?style=flat-square&logo=Medium&logoColor=#000000)](https://blog.kkyungvelyy.com)
+[![Profile Kyungseo-Park](https://img.shields.io/badge/Portfolio-999999?style=flat-square&logo=The%20Irish%20Times&logoColor=white)](https://profile.kkyungvelyy.com)
+[![경서와아이들 Kyungseo-Park](https://img.shields.io/badge/%EA%B2%BD%EC%84%9C%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4-EB2E2C?style=flat-square&logo=Ferrari%20N.V.&logoColor=white)](https://team.kkyungvelyy.com)
 
 ![footer](https://capsule-render.vercel.app/api?section=footer&height=160&&type=waving)
