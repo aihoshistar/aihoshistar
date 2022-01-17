@@ -13,7 +13,7 @@
 
 </div>
 
-### 2019 Use Languages
+### 2019 Used Tech Stack
 
 ![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/-Python-black?logo=Python&style=social)&nbsp;&nbsp;
@@ -24,7 +24,7 @@
 ![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
 ![Docker](https://img.shields.io/badge/-Docker-black?logo=Docker&style=social)&nbsp;&nbsp;
 
-### 2020 Use Languages
+### 2020 Used Tech Stack
 
 ![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)&nbsp;&nbsp;
 ![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)&nbsp;&nbsp;
@@ -36,7 +36,7 @@
 ![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
 ![Docker](https://img.shields.io/badge/-Docker-black?logo=Docker&style=social)&nbsp;&nbsp;
 
-### 2021 Use Languages
+### 2021 Used Tech Stack
 
 ![Javascript](https://img.shields.io/badge/-Javascript-black?logo=Javascript&style=social)&nbsp;&nbsp;
 ![React](https://img.shields.io/badge/-React-black?logo=React&style=social)&nbsp;&nbsp;
