@@ -55,7 +55,7 @@
 ![Stats Overview](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/overview.svg)
 ![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/languages.svg)
 
-### 👣 Traces of my life
+<!-- ### 👣 Traces of my life -->
 
 ### 실험실
 
