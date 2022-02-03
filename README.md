@@ -57,6 +57,17 @@
 
 ### 👣 Traces of my life
 
+### 실험실
+
+- https://kkyungvelyy.com
+
+### 진행중인 사이드 프로젝트
+
+- 프론트 - https://kspark.link
+- 백엔드 - https://api.kspark.link
+
+### 대기중인 사이드 프로젝트
+
 [![TechBlog Kyungseo-Park](https://img.shields.io/badge/Tech%20Blog-000000?style=flat-square&logo=Medium&logoColor=#000000)](https://blog.kkyungvelyy.com)
 [![Profile Kyungseo-Park](https://img.shields.io/badge/Portfolio-999999?style=flat-square&logo=The%20Irish%20Times&logoColor=white)](https://profile.kkyungvelyy.com)
 [![경서와아이들 Kyungseo-Park](https://img.shields.io/badge/%EA%B2%BD%EC%84%9C%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4-EB2E2C?style=flat-square&logo=Ferrari%20N.V.&logoColor=white)](https://team.kkyungvelyy.com)
