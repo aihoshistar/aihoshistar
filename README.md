@@ -4,15 +4,12 @@
 [![Linkedin: Kyungseo-Park](https://img.shields.io/badge/-KyungseoPark-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)](https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)
 
 📫 contact us: troublesome.dev@gmail.com
-
+:memo: blog: https://velog.io/@kkyungvelyy
 ### Focused Tech Stack
 
 ![Next.js](https://img.shields.io/badge/-Next.js-black?logo=Next.js&style=social)&nbsp;&nbsp;
 ![PHP](https://img.shields.io/badge/-PHP-black?logo=PHP&style=social)&nbsp;&nbsp;
 ![Laravel](https://img.shields.io/badge/-Laravel-black?logo=Laravel&style=social)&nbsp;&nbsp;
-![MySQL](https://img.shields.io/badge/-MySQL-black?logo=MySQL&style=social)&nbsp;&nbsp;
-![Postgresql](https://img.shields.io/badge/-Postgresql-black?logo=Postgresql&style=social)&nbsp;&nbsp;
-![Docker](https://img.shields.io/badge/-Docker-black?logo=Docker&style=social)&nbsp;&nbsp;
 
 ### 📊 Github Stats
 
