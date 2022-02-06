@@ -18,7 +18,7 @@
 <!-- ### 👣 Traces of my life -->
 
 ### 실험실
-[서버 스팩]  
+[서버 스팩 - 물리서버]  
 Intel Xeon E3 1245v5 (4코어 8쓰레드)  
 32GB DDR4 ECC 2133MHz (32기가)  
 2x 2To HDD Soft RAID (HDD 2TB)  
@@ -27,7 +27,7 @@ https://kkyungvelyy.com
 http://jenkins.kkyungvelyy.com/  
 
 ### 진행중인 사이드 프로젝트
-[레포 초대 문의는 GIT]
+[레포 초대 문의는 메일로]  
 프론트 - https://kspark.link  
 백엔드 - https://api.kspark.link  
 
