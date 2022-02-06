@@ -3,7 +3,7 @@
 
 [![Linkedin: Kyungseo-Park](https://img.shields.io/badge/-KyungseoPark-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)](https://www.linkedin.com/in/kyungseo-park-2bb6591a5/)
 
-📫 contact us: troublesome.dev@gmail.com
+📫 contact us: troublesome.dev@gmail.com  
 :memo: blog: https://velog.io/@kkyungvelyy
 ### Focused Tech Stack
 
