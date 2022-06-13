@@ -7,4 +7,5 @@
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 </div>
 
+![GitHub Statistics](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/overview.svg)
 ![Most Used Languages](https://raw.githubusercontent.com/Kyungseo-Park/Kyungseo-Park/output/generated/languages.svg)
