@@ -61,8 +61,8 @@ jobs:
     # Commits all changed files to the repository
     - name: Commit to the output branch of repo
       run: |
-        git config --global user.name "github-stats[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "Kyungseo-Park[bot]"
+        git config --global user.email "45850400+Kyungseo-Park@users.noreply.github.com"
         git add .
         git commit -m 'temp commit' || echo
         git checkout output 2>/dev/null || git checkout --orphan output && git rm -rf . && git checkout main -- generated/
