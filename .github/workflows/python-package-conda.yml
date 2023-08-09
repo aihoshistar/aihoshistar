@@ -22,6 +22,6 @@ jobs:
           git config --global user.email "45850400+Kyungseo-Park@users.noreply.github.com"
           git add .
           git commit -m 'temp commit' || echo
-          git checkout output 2>/dev/null || git checkout --orphan output && git rm -rf . && git checkout main -- generated/
+          git checkout output-3d 2>/dev/null || git checkout --orphan output-3d && git rm -rf . && git checkout main -- generated/
           git commit -m "Update generated files" || echo
           git push origin output-3d -f
