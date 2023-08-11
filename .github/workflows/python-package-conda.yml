@@ -28,4 +28,4 @@ jobs:
             exit 0
           fi
           git commit -m 'temp commit' 
-          git push origin output-3d
+          git push origin output-3d --force
