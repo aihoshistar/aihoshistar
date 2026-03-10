@@ -167,9 +167,7 @@ class Stats:
             self._name = self.username
             
         return str(self._name or "Unknown User")
-    @property
-    async def name(self) -> str:
-        await self.get_stats(); return self._name
+    
     @property
     async def stargazers(self) -> int:
         await self.get_stats(); return self._stargazers
