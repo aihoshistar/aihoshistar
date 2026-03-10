@@ -47,11 +47,6 @@ jobs:
           git rm -rf .
           git checkout main -- generated/
           git add generated/
-          
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          
-          git commit -m "chore: update generated stats files"
-          git push origin output --force
+
+          git commit -m "chore: update stats images" || echo "No changes to commit"
+          git push origin output --force # 강제로 output 브랜치 덮어쓰기
