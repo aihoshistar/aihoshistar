@@ -26,13 +26,13 @@ async def generate_overview(s: Stats) -> None:
     changed = (lines[0] + lines[1]) if lines else 0
 
     # re.sub에 전달되는 값이 절대 None이 아니도록 보장
-    output = re.sub("{{ name }}", str(name), output)
-    output = re.sub("{{ stars }}", f"{stars or 0:,}", output)
-    output = re.sub("{{ forks }}", f"{forks or 0:,}", output)
-    output = re.sub("{{ contributions }}", f"{contribs or 0:,}", output)
-    output = re.sub("{{ lines_changed }}", f"{changed:,}", output)
-    output = re.sub("{{ views }}", f"{views or 0:,}", output)
-    output = re.sub("{{ repos }}", f"{len(all_repos) if all_repos else 0:,}", output)
+    output = output.replace("{{ name }}", str(name))
+    output = output.replace("{{ stars }}", f"{stars or 0:,}")
+    output = output.replace("{{ forks }}", f"{forks or 0:,}")
+    output = output.replace("{{ contributions }}", f"{contribs or 0:,}")
+    output = output.replace("{{ lines_changed }}", f"{changed:,}")
+    output = output.replace("{{ views }}", f"{views or 0:,}")
+    output = output.replace("{{ repos }}", f"{len(all_repos) if all_repos else 0:,}")
 
     generate_output_folder()
     with open("generated/overview.svg", "w", encoding="utf-8") as f:
@@ -73,8 +73,8 @@ fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
 </li>
 """
 
-    output = re.sub(r"{{ progress }}", progress, output)
-    output = re.sub(r"{{ lang_list }}", lang_list, output)
+    output = output.replace("{{ progress }}", progress)
+    output = output.replace("{{ lang_list }}", lang_list)
 
     generate_output_folder()
     with open("generated/languages.svg", "w", encoding="utf-8") as f:
