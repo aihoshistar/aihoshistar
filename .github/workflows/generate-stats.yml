@@ -8,19 +8,23 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # Push를 위한 쓰기 권한 명시
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Create generated directory
+        run: mkdir -p generated
 
       - name: Generate stats card
         uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&theme=radical'
           path: generated/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -28,35 +32,36 @@ jobs:
         uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: top-langs
-          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=6'
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=radical&include_all_commits=true'
           path: generated/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate pin card
-        uses: soulteary/github-readme-stats-action@v1.0.0
-        with:
-          card: pin
-          options: 'username=soulteary&repo=github-readme-stats'
-          path: generated/pin-github-readme-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate wakatime card
         uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: wakatime
-          options: 'username=yourname&hide_progress=true'
+          options: 'username=${{ github.repository_owner }}&hide_progress=true&theme=radical'
           path: generated/wakatime.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit to the output branch
+      - name: Deploy to output branch
         run: |
+          # Git 사용자 설정
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Orphan 브랜치를 생성하고 필요한 폴더(generated)만 옮겨서 커밋
+          # 1. 생성된 SVG 파일들을 임시 디렉토리로 복사
+          cp -r generated /tmp/generated_output
+          
+          # 2. output 브랜치로 전환 (없으면 생성, 있으면 초기화)
           git checkout --orphan output
-          git rm -rf .
-          git checkout src -- generated/
+          git rm -rf . # 기존 파일 모두 제거 (Index 비우기)
+          
+          # 3. 임시 디렉토리에서 파일 복구
+          mkdir -p generated
+          cp -r /tmp/generated_output/* generated/
+          
+          # 4. 변경 사항 확인 후 푸시
           git add generated/
           
           if git diff --staged --quiet; then
@@ -64,5 +69,5 @@ jobs:
             exit 0
           fi
           
-          git commit -m "chore: update generated stats files"
+          git commit -m "chore: update generated stats files (at $(date))"
           git push origin output --force
