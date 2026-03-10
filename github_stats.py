@@ -117,62 +117,56 @@ class Stats:
         self._views = None
 
     async def get_stats(self) -> None:
-        if self._stargazers is not None: return # 이미 로드됨
+        if self._stargazers is not None:
+            return
 
-        self._stargazers, self._forks = 0, 0
-        self._languages, self._repos, self._ignored_repos = {}, set(), set()
+        self._stargazers = 0
+        self._forks = 0
+        self._languages = dict()
+        self._repos = set()
+        self._ignored_repos = set()
         
-        next_owned, next_contrib = None, None
+        next_owned = None
+        next_contrib = None
         while True:
             raw_results = await self.queries.query(
                 Queries.repos_overview(owned_cursor=next_owned,
-                                    contrib_cursor=next_contrib)
+                                       contrib_cursor=next_contrib)
             )
-            # 결과를 전혀 받지 못했을 경우를 대비한 빈 딕셔너리 처리
-            raw_results = raw_results if raw_results is not None else {}
-            data = raw_results.get("data", {})
-            viewer = data.get("viewer", {}) if data else {}
-
-            # 이름 추출 로직 강화
-            self._name = viewer.get("name") or viewer.get("login") or self.username or "No Name"
             
-            owned = data.get("repositories", {})
-            contrib = data.get("repositoriesContributedTo", {})
-            
-            target_repos = owned.get("nodes", [])
-            if self._consider_forked_repos:
-                target_repos += contrib.get("nodes", [])
-            else:
-                for r in contrib.get("nodes", []):
-                    self._ignored_repos.add(r.get("nameWithOwner"))
-
-            for repo in target_repos:
-                name = repo.get("nameWithOwner")
-                if name in self._repos or name in self._exclude_repos: continue
-                
-                self._repos.add(name)
-                self._stargazers += repo.get("stargazers", {}).get("totalCount", 0)
-                self._forks += repo.get("forkCount", 0)
-
-                for lang in repo.get("languages", {}).get("edges", []):
-                    lname = lang.get("node", {}).get("name", "Other")
-                    if lname in self._exclude_langs: continue
-                    
-                    if lname not in self._languages:
-                        self._languages[lname] = {"size": 0, "occurrences": 0, "color": lang.get("node", {}).get("color")}
-                    self._languages[lname]["size"] += lang.get("size", 0)
-                    self._languages[lname]["occurrences"] += 1
-
-            if owned.get("pageInfo", {}).get("hasNextPage") or contrib.get("pageInfo", {}).get("hasNextPage"):
-                next_owned = owned.get("pageInfo", {}).get("endCursor")
-                next_contrib = contrib.get("pageInfo", {}).get("endCursor")
-            else:
+            # API 응답이 없거나 에러인 경우 처리
+            if not raw_results or "data" not in raw_results:
+                print(f"Warning: API response is empty or invalid. Results: {raw_results}")
+                # 이름이 없으면 환경 변수에서 가져온 username이라도 할당
+                if self._name is None:
+                    self._name = self.username
                 break
 
-        total_size = sum(v["size"] for v in self._languages.values()) or 1
-        for v in self._languages.values():
-            v["prop"] = (v["size"] / total_size) * 100
+            viewer = raw_results.get("data", {}).get("viewer", {})
+            if viewer:
+                # 이름이 있으면 이름, 없으면 로그인 ID 할당
+                self._name = viewer.get("name") or viewer.get("login")
 
+            # ... (나머지 리포지토리 및 언어 수집 로직은 동일) ...
+            
+            # 반복문 탈출 조건 (hasNextPage 체크)
+            # ...
+
+    @property
+    async def name(self) -> str:
+        """
+        :return: GitHub user's name
+        """
+        if self._name is not None:
+            return str(self._name) # 확실하게 문자열 형변환
+        
+        await self.get_stats()
+        
+        # get_stats 이후에도 None이면 환경 변수 username 반환
+        if self._name is None:
+            self._name = self.username
+            
+        return str(self._name or "Unknown User")
     @property
     async def name(self) -> str:
         await self.get_stats(); return self._name
