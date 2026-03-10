@@ -16,26 +16,37 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v5
+      - name: Generate stats card
+        uses: soulteary/github-readme-stats-action@v1.0.0
         with:
-          python-version: '3.8'
-          cache: 'pip' # 복잡한 actions/cache 스텝을 이 옵션 하나로 대체
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true'
+          path: generated/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install requirements
-        run: |
-          python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
+      - name: Generate top languages card
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=6'
+          path: generated/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate images
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXCLUDED: ${{ secrets.EXCLUDED }}
-          EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
-          COUNT_STATS_FROM_FORKS: ${{ secrets.COUNT_STATS_FROM_FORKS }}
-        run: |
-          python generate_images.py
+      - name: Generate pin card
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: pin
+          options: 'username=soulteary&repo=github-readme-stats'
+          path: generated/pin-github-readme-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate wakatime card
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: wakatime
+          options: 'username=yourname&hide_progress=true'
+          path: generated/wakatime.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit to the output branch
         run: |
@@ -45,7 +56,7 @@ jobs:
           # Orphan 브랜치를 생성하고 필요한 폴더(generated)만 옮겨서 커밋
           git checkout --orphan output
           git rm -rf .
-          git checkout main -- generated/
+          git checkout src -- generated/
           git add generated/
           
           if git diff --staged --quiet; then
