@@ -29,8 +29,20 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          git checkout -b output-3d
-          git add profile-3d-contrib/ # 전체(.) 대신 생성된 폴더만 타겟팅
+          # 1. 결과물을 안전한 임시 장소로 대피
+          rm -rf /tmp/profile-3d-backup
+          cp -r profile-3d-contrib /tmp/profile-3d-backup
+          
+          # 2. 독립적인 고아(Orphan) 브랜치 생성 및 기존 파일 완전 초기화
+          git checkout --orphan output-3d
+          git rm -rf .
+          
+          # 3. 결과물 복원
+          mkdir -p profile-3d-contrib
+          cp -r /tmp/profile-3d-backup/* profile-3d-contrib/
+          
+          # 4. 커밋 및 강제 푸시
+          git add profile-3d-contrib/
           
           if git diff --staged --quiet; then
             echo "No changes to commit"
