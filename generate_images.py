@@ -9,23 +9,30 @@ def generate_output_folder() -> None:
     os.makedirs("generated", exist_ok=True)
 
 async def generate_overview(s: Stats) -> None:
-    # encoding 추가 및 불필요한 변수 선언 정리
-    try:
-        with open("templates/overview.svg", "r", encoding="utf-8") as f:
-            output = f.read()
-    except FileNotFoundError:
-        print("Error: templates/overview.svg not found.")
-        return
+    """
+    Generate an SVG badge with summary statistics
+    """
+    with open("templates/overview.svg", "r", encoding="utf-8") as f:
+        output = f.read()
 
-    output = re.sub("{{ name }}", await s.name, output)
-    output = re.sub("{{ stars }}", f"{await s.stargazers:,}", output)
-    output = re.sub("{{ forks }}", f"{await s.forks:,}", output)
-    output = re.sub("{{ contributions }}", f"{await s.total_contributions:,}", output)
-    
+    # 데이터를 미리 await로 받아두고, None일 경우 기본값 처리
+    name = await s.name or ""
+    stars = await s.stargazers
+    forks = await s.forks
+    contribs = await s.total_contributions
+    views = await s.views
+    all_repos = await s.all_repos
     lines = await s.lines_changed
-    output = re.sub("{{ lines_changed }}", f"{sum(lines):,}", output)
-    output = re.sub("{{ views }}", f"{await s.views:,}", output)
-    output = re.sub("{{ repos }}", f"{len(await s.all_repos):,}", output)
+    changed = (lines[0] + lines[1]) if lines else 0
+
+    # re.sub에 전달되는 값이 절대 None이 아니도록 보장
+    output = re.sub("{{ name }}", str(name), output)
+    output = re.sub("{{ stars }}", f"{stars or 0:,}", output)
+    output = re.sub("{{ forks }}", f"{forks or 0:,}", output)
+    output = re.sub("{{ contributions }}", f"{contribs or 0:,}", output)
+    output = re.sub("{{ lines_changed }}", f"{changed:,}", output)
+    output = re.sub("{{ views }}", f"{views or 0:,}", output)
+    output = re.sub("{{ repos }}", f"{len(all_repos) if all_repos else 0:,}", output)
 
     generate_output_folder()
     with open("generated/overview.svg", "w", encoding="utf-8") as f:
