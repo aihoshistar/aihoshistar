@@ -2,7 +2,7 @@ name: Generate Stats Images
 
 on:
   push:
-    branches: [ main ]
+    branches: [ src ]
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
@@ -42,25 +42,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # 1. generated 폴더가 없으면 에러 내고 중단 (스크립트 실행 확인)
-          if [ ! -d "generated" ]; then
-            echo "Error: 'generated' directory not found."
-            exit 1
-          fi
-
-          # 2. 결과물을 안전한 임시 장소로 대피
-          rm -rf /tmp/generated_backup
-          cp -r generated /tmp/generated_backup
-
-          # 3. 브랜치 전환 및 완전 초기화
+          # Orphan 브랜치를 생성하고 필요한 폴더(generated)만 옮겨서 커밋
           git checkout --orphan output
           git rm -rf .
-          
-          # 4. 결과물 복원 (이미 존재할 경우 대비해 -p 사용 및 강제 덮어쓰기)
-          mkdir -p generated
-          cp -r /tmp/generated_backup/* generated/
-          
-          # 5. 커밋 및 푸시
+          git checkout main -- generated/
           git add generated/
-          git commit -m "chore: update stats images" || echo "No changes to commit"
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          git commit -m "chore: update generated stats files"
           git push origin output --force
