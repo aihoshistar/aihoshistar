@@ -2,6 +2,7 @@ import asyncio
 import os
 import re
 import aiohttp
+import html
 from github_stats import Stats
 
 def generate_output_folder() -> None:
@@ -48,12 +49,15 @@ async def generate_languages(s: Stats) -> None:
 
     progress = ""
     lang_list = ""
-    sorted_languages = sorted((await s.languages).items(), reverse=True, key=lambda t: t[1].get("size"))
+
+    sorted_languages = sorted((await s.languages).items(), reverse=True, key=lambda t: t[1].get("size"))[:6]
     
     delay_between = 150
     for i, (lang, data) in enumerate(sorted_languages):
         color = data.get("color") or "#000000"
         prop = data.get("prop", 0)
+        
+        safe_lang = html.escape(lang)
         
         ratio = [0.99, 0.01] if prop > 50 else [0.98, 0.02]
         if i == len(sorted_languages) - 1: ratio = [1, 0]
@@ -68,7 +72,7 @@ async def generate_languages(s: Stats) -> None:
 <svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:{color};"
 viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
 fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">{lang}</span>
+<span class="lang">{safe_lang}</span>
 <span class="percent">{prop:0.2f}%</span>
 </li>
 """
