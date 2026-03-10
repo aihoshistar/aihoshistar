@@ -124,11 +124,17 @@ class Stats:
         
         next_owned, next_contrib = None, None
         while True:
-            res = await self.queries.query(Queries.repos_overview(owned_cursor=next_owned, contrib_cursor=next_contrib))
-            data = res.get("data", {}).get("viewer", {})
-            if not data: break
+            raw_results = await self.queries.query(
+                Queries.repos_overview(owned_cursor=next_owned,
+                                    contrib_cursor=next_contrib)
+            )
+            # 결과를 전혀 받지 못했을 경우를 대비한 빈 딕셔너리 처리
+            raw_results = raw_results if raw_results is not None else {}
+            data = raw_results.get("data", {})
+            viewer = data.get("viewer", {}) if data else {}
 
-            self._name = data.get("name") or data.get("login") or "No Name"
+            # 이름 추출 로직 강화
+            self._name = viewer.get("name") or viewer.get("login") or self.username or "No Name"
             
             owned = data.get("repositories", {})
             contrib = data.get("repositoriesContributedTo", {})
