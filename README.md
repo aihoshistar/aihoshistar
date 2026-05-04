@@ -29,9 +29,7 @@
 
 ## GitHub Stats
 
-<img src="https://raw.githubusercontent.com/aihoshistar/aihoshistar/output-3d/profile-3d-contrib/profile-green-animate.svg" alt="3D Contributions" width="60%">
-<img src="https://raw.githubusercontent.com/aihoshistar/aihoshistar/output/generated/stats.svg" alt="GitHub Stats" width="40%" />
-<img src="https://raw.githubusercontent.com/aihoshistar/aihoshistar/output/generated/top-langs.svg" alt="Top Languages" width="40%" />
+<img src="https://raw.githubusercontent.com/aihoshistar/aihoshistar/output-3d/profile-3d-contrib/profile-green-animate.svg" alt="3D Contributions" width="80%">
 
 ---
 
