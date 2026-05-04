@@ -38,11 +38,16 @@
 
 ## About Me
 
-- Working on **infrastructure automation** and **web development**
-- Learning **system design**
-- Passionate about **photography** and **videography**
-- Based in **Seoul, South Korea** 🇰🇷
-- Fun fact: I shoot with **Nikon Zf** and **Sony α7 II**
+
+Working on **infrastructure automation** and **web development**
+
+Learning **system design**
+
+Passionate about **photography** and **videography**
+
+Based in **Seoul, South Korea** 🇰🇷
+
+Fun fact: I shoot with **Nikon Zf** and **Sony α7 II**
 
 
 </div>
