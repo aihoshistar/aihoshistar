@@ -57,21 +57,28 @@ jobs:
             exit 0
           fi
           
+          # 생성된 파일을 임시 디렉토리로 백업
+          echo "Backing up generated files..."
+          cp -r generated /tmp/generated-backup
+          
           # output 브랜치로 전환 (없으면 생성)
           git fetch origin output || true
           
           if git rev-parse --verify origin/output >/dev/null 2>&1; then
             echo "output 브랜치 존재 - 체크아웃"
             git checkout -B output origin/output
+            # 기존 파일 제거
+            rm -rf generated
           else
             echo "output 브랜치 없음 - 새로 생성"
             git checkout --orphan output
             git rm -rf . 2>/dev/null || true
           fi
           
-          # generated 디렉토리만 유지
+          # 백업한 파일 복원
+          echo "Restoring generated files..."
           mkdir -p generated
-          git checkout src -- generated/
+          cp -r /tmp/generated-backup/* generated/
           
           # 커밋 및 푸시
           git add generated/
