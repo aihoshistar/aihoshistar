@@ -7,7 +7,7 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=aihoshistar&style=flat-square&color=blueviolet)
 ![Followers](https://img.shields.io/github/followers/aihoshistar?label=Followers&style=flat-square&color=blueviolet)
 
----
+
 
 ## Tech Stack
 
@@ -25,13 +25,13 @@
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
----
+
 
 ## GitHub Stats
 
 <img src="https://raw.githubusercontent.com/aihoshistar/aihoshistar/output-3d/profile-3d-contrib/profile-green-animate.svg" alt="3D Contributions" width="80%">
 
----
+
 
 
 ## About Me
