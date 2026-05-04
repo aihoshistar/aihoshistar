@@ -7,7 +7,3 @@
   &nbsp; &nbsp;
   <img src="https://raw.githubusercontent.com/aihoshistar/aihoshistar/output/generated/top-langs.svg" alt="Top Languages" width="40%" />
 </p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/aihoshistar/aihoshistar/output/generated/wakatime.svg" alt="WakaTime" width="80%" />
-</p>
